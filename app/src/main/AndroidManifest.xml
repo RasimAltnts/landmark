@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.landmarkbook">
+    package="com.example.firebase">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -8,9 +9,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivty"></activity>
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.MaterialComponents.NoActionBar">
+        <activity
+            android:name=".addPage"
+            android:exported="true" />
+        <activity
+            android:name=".settings"
+            android:exported="true" />
+        <activity
+            android:name=".homepage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".mainpage"
+            android:exported="true"
+            android:label="@string/title_activity_mainpage"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".createuse"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
